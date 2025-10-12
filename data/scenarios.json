@@ -3,7 +3,7 @@
     "id":"default-3",
     "title": "Ischemic Heart Disease",
     "hospitalSetting": "emergency",
-    "description": "A patient is rushed to the emergency department.He is pale, diaphoretic, clutching his chest tightly and gasping..",
+    "description": "A patient is rushed to the emergency department.He is pale, diaphoretic, clutching his chest tightly and gasping.",
     "patientProfile": "Mr. J is a 58-year-old man who complains of chest pain.",
     "timerDuration": 60,
     "interactions": [
@@ -591,4 +591,5 @@
   }
 
 ]
+
 
