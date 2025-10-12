@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nursing Chat Simulator</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Nursing Chat Simulator</h1>
+            <nav>
+                <button onclick="showPage('landing')" class="nav-btn active" id="landing-btn">Select Scenario</button>
+                <a href="login.html" class="nav-btn">Instructor Panel</a>
+            </nav>
+        </header>
+
+        <!-- Landing Page - Scenario Selection -->
+        <div id="landing-page" class="page active">
+            <div class="page-content">
+                <h2>Select a Scenario</h2>
+                
+                <div id="scenarios-list" class="scenarios-grid">
+                    <!-- Scenarios will be loaded here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Chat Simulation Page -->
+        <div id="chat-page" class="page">
+            <div class="page-content">
+                <div class="chat-header">
+                    <h2 id="chat-scenario-title">Scenario Title</h2>
+                    <div class="scenario-info">
+                        <div id="chat-hospital-setting"></div>
+                        <div id="chat-patient-profile"></div>
+                    </div>
+                    <div class="timer-container">
+                        <div class="timer-label">Time Remaining:</div>
+                        <div id="timer-display" class="timer-display">00:00</div>
+                    </div>
+                    <button onclick="endSimulation()" class="btn btn-danger">End Simulation</button>
+                </div>
+
+                <div class="chat-container">
+                    <div id="chat-messages" class="chat-messages">
+                        <!-- Chat messages will appear here -->
+                    </div>
+                    
+                    <div class="chat-input-container">
+                        <input type="text" id="chat-input" placeholder="Type your response as a nurse..." disabled>
+                        <button onclick="sendMessage()" id="send-btn" class="btn btn-primary" disabled>Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Page -->
+        <div id="results-page" class="page">
+            <div class="page-content">
+                <h2>Simulation Results</h2>
+                <div id="results-content">
+                    <!-- Results will be displayed here -->
+                </div>
+                <button onclick="showPage('landing')" class="btn btn-primary">Back to Scenarios</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div id="loading-overlay" class="loading-overlay" style="display: none;">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p class="loading-text">Processing simulation results...</p>
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/chat.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

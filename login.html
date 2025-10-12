@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructor Login - Nursing Chat Simulator</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Instructor Login</h1>
+            <nav>
+                <a href="index.html" class="nav-btn">← Back to Scenarios</a>
+            </nav>
+        </header>
+
+        <div class="page active">
+            <div class="login-container">
+                <div class="login-card">
+                    <h2>Access Instructor Panel</h2>
+                    <p class="login-subtitle">Please enter your PIN to continue</p>
+                    
+                    <form id="login-form" class="login-form">
+                        <div class="form-group">
+                            <label for="pin">Instructor PIN:</label>
+                            <input type="password" id="pin" required placeholder="Enter your 4-digit PIN" maxlength="4" pattern="[0-9]{4}">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="remember-me">
+                                <span class="checkmark">Remember me for 24 hours</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary login-btn">Access Panel</button>
+                    </form>
+
+                    <div id="error-message" class="error-message" style="display: none;">
+                        Invalid PIN. Please try again.
+                    </div>
+
+                    <!-- <div class="login-help">
+                        <p><strong>Default PIN:</strong></p>
+                        <p><code>1234</code></p>
+                        <p class="note">Note: Change this PIN in the instructor panel after first login.</p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>

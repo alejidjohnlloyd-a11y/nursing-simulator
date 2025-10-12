@@ -1,0 +1,591 @@
+[
+  {
+    "id":"default-3",
+    "title": "Ischemic Heart Disease",
+    "hospitalSetting": "emergency",
+    "description": "A patient is rushed to the emergency department.He is pale, diaphoretic, clutching his chest tightly and gasping.",
+    "patientProfile": "Mr. J is a 58-year-old man who complains of chest pain.",
+    "interactions": [
+      {
+        "type": "patient",
+        "message": "Nurse… help… my chest…",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "system",
+        "message": "0–10 Minutes in the emergency department means that it is the Triage & Initial Stabilization Phase.\n👉 What is your first approach as the nurse?",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "system",
+        "message": "Hint: Before any intervention, the nurse must establish rapport and clarify the main concern.\n👉 How should you introduce yourself and gather the chief complaint?",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "nurse",
+        "message": "",
+        "isCorrect": true,
+        "expectedResponse": "Good day, Nurse, Describe, Feeling, Hello, Hi, Good morning, Care provider, Health worker, Caregiver, Tell, Explain, Talk about, Experiencing, Sensing, Going through",
+        "correctResponse": "Good day, sir. I’m your nurse. Can you describe what you’re feeling right now?",
+        "rationale": "Introducing oneself and asking the patient to describe symptoms establishes rapport and therapeutic communication, which is vital in emergency care. This step helps build trust, reduces anxiety, and allows the nurse to obtain the chief complaint directly from the patient. According to Brunner and Suddarth (2022), the nurse-patient relationship must begin with acknowledgment and active listening, especially during acute distress. Early identification of the presenting symptom (in this case, chest pain) directs the next critical interventions in suspected acute coronary syndrome (ACS). The World Health Organization (2018) also emphasizes patient-centered communication as essential in improving outcomes and adherence during emergency encounters."
+      },
+      {
+        "type": "patient",
+        "message": "(pale, sweating, clutching chest) It feels so heavy... crushing... I can’t breathe properly.",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "system",
+        "message": "Hint: The patient describes “crushing chest pain and difficulty breathing.” These symptoms may indicate ACS.\n👉 What baseline assessments and monitoring should you prioritize at this point?",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "nurse",
+        "message": "",
+        "isCorrect": true,
+        "expectedResponse": "Understand, Check, Vital signs, Connect, Heart monitor, Calm, Hear you, Get it, See what you mean, Look at, Take, Measure, Vitals, Basic health signs, Body signs, Attach, Hook up, Put on, Heart machine, Monitor, Device to check your heart, Relaxed, Steady, At ease",
+        "correctResponse": "I understand, sir. I’ll check your vital signs and connect you to a heart monitor. Please stay calm.",
+        "rationale": "Immediate assessment of vital signs (blood pressure, heart rate, respiratory rate, temperature, oxygen saturation) and cardiac monitoring provides objective baseline data to guide urgent management. The American Heart Association (AHA, 2020) states that continuous electrocardiographic (ECG) monitoring is crucial for patients presenting with chest pain, as early rhythm detection improves survival if sudden deterioration occurs. Monitoring also allows detection of arrhythmias or ischemic changes. The nurse’s calm reassurance mitigates the sympathetic stress response, which can otherwise increase myocardial oxygen demand and worsen ischemia (Brunner & Suddarth, 2022)."
+      },
+      {
+        "type": "system",
+        "message": "Hint: A number on the monitor suggests one immediate action to support breathing. \nBP = 160/90 mmHg, \nHR = 110 bpm, \nRR = 25 cpm, \nSpO₂ = 88%, \nTemp = 37.2°C \n\n👉 SpO₂ is below 90%. What is your immediate nursing action to improve oxygen delivery?",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "nurse",
+        "message": "",
+        "isCorrect": true,
+        "expectedResponse": "2, 3, 4,  Oxygen, Low, Give, Liters, Nasal cannula, Breathing, Air, Extra oxygen, Added oxygen, A bit low, Not enough, Below normal, Provide, Start, Put you on, Amount, Flow, Level, Small tube in your nose, Soft tube, Oxygen line, How you breathe, Getting air, Taking in air",
+        "correctResponse": "Your oxygen level is low, I’ll give you oxygen at 4 liters per minute through a nasal cannula. This will help your breathing.",
+        "rationale": "The patient’s oxygen saturation (SpO₂) is 88%, which falls below the recommended threshold of 90%. The AHA (2020) and WHO (2019) guidelines both recommend supplemental oxygen in ACS only if hypoxemia is present, as unnecessary oxygen can lead to vasoconstriction and oxidative stress. Administering 4 liters per minute via nasal cannula ensures adequate oxygen delivery to tissues, reduces myocardial ischemia, and prevents further hypoxemic injury. Explaining the intervention in simple terms reassures the patient and promotes cooperation."
+      },
+      {
+        "type": "patient",
+        "message": "Thank you… it’s really hard to breathe.",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "system",
+        "message": "Hint: Sometimes small adjustments in positioning make a big difference in breathing.\n👉 What position will you place the patient in, and why?",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "nurse",
+        "message": "",
+        "isCorrect": true,
+        "expectedResponse": "Raised, Head, Lungs, Expand, Slow, Breaths, Lifted, Moved up, Adjusted, Upper body, Headrest, Back part, Breathing parts, Air sacs, Breathing system, Open up, Work better, Take in more air, Gentle, Steady, Calm, Breathing, Air in and out, Breathing in and out",
+        "correctResponse": "I’ve raised your head to make it easier for your lungs to expand. Keep taking slow breaths",
+        "rationale": "Placing the patient in Semi-Fowler’s position (30–45° head elevation) promotes lung expansion, decreases preload, and facilitates oxygenation. This position also eases dyspnea by reducing diaphragmatic pressure. Brunner and Suddarth (2022) highlight positioning as a non-pharmacologic measure to improve ventilation in patients with respiratory distress. The WHO (2018) further emphasizes simple bedside interventions like positioning as critical elements of initial stabilization in emergency care. By instructing the patient to take slow, controlled breaths, the nurse reduces anxiety and improves oxygen exchange."
+      },
+      {
+        "type": "system",
+        "message": "After 5 minutes, you’ve established IV access, sent blood samples, and prepared for ECG. The doctor arrives.\n👉 Using SBAR (Situation, Background, Assessment, Recommendation), how will you update the physician on Mr. J’s status and your interventions so far?",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "system",
+        "message": "Doctor: Status Nurse?",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "nurse",
+        "message": "",
+        "isCorrect": true,
+        "expectedResponse": "Doctor, 58-year-old male, Acute chest pain, HR 110, BP 160/90, SpO₂ 88%, Cardiac monitoring initiated, Oxygen therapy started, IV access with 18G placed, Blood samples sent, Preparing ECG, Physician, Dr., Medical provider, Adult man, Patient, Male client, Sudden chest discomfort, Severe chest ache, Chest pressure, Heart rate 110, Pulse 110, Heartbeats per minute 110, Blood pressure 160/90, Pressure reading 160/90, BP reading high, Oxygen level 88%, Low oxygen, Blood oxygen 88%, Heart monitor started, Connected to heart machine, Monitoring heartbeat, Oxygen given, Extra air support, Oxygen administered, IV line inserted, Intravenous access, Needle in vein, Blood tests ordered, Blood drawn, Labs sent, Getting ECG ready, Heart tracing set up, Electrocardiogram ready",
+        "correctResponse": "Doctor, 58-year-old male with acute chest pain, HR 110, BP 160/90, SpO₂ 88%. Cardiac monitoring initiated, oxygen therapy started, IV access with 18G placed, blood samples sent, preparing ECG.",
+        "rationale": "The nurse uses SBAR communication (Situation, Background, Assessment, Recommendation), a structured handoff tool endorsed by the WHO (2018) and AHA (2020) for safe, effective interprofessional communication. SBAR minimizes the risk of omissions, ensures clarity, and facilitates rapid decision-making in emergencies. By presenting vital signs, interventions already performed, and the next planned step (ECG), the nurse demonstrates critical thinking and proactive care coordination."
+      },
+      {
+        "type": "system",
+        "message": "Doctor: Good. Give aspirin 325 mg chewed immediately.",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "system",
+        "message": "The physician orders aspirin 325 mg chewable. The patient must understand its purpose.\n👉 What will you tell the patient about why this medicine is important?",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "nurse",
+        "message": "",
+        "isCorrect": true,
+        "expectedResponse": "Chew, Tablet, Bitter, Protect, Heart, Preventing, Damage, Clots, Bite, Break down, Crush with your teeth, Pill, Medicine, Drug, Strong-tasting, Not sweet, Tastes bad, Keep safe, Look after, Guard, Heart muscle, Heart organ, Your heart, Stopping, Keeping from happening, Avoiding, Harm, More problems, Further trouble",
+        "correctResponse": "Sir, please chew this aspirin tablet. It’s bitter, but it helps protect your heart by stopping your blood from forming more clots.",
+        "rationale": "Chewable aspirin (acetylsalicylic acid) 325 mg is the first-line antiplatelet therapy for suspected ACS, as recommended by the AHA (2020) and WHO (2019). Chewing accelerates absorption, leading to rapid platelet inhibition and decreased clot formation, thereby reducing myocardial damage. Educating the patient in layman’s terms (“stopping clots”) helps improve adherence and alleviates anxiety. This reflects nursing’s dual role of administering emergency drugs safely and providing clear health teaching."
+      },
+      {
+        "type": "patient",
+        "message": "(chews) Bitter… will this stop the pain?",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "system",
+        "message": "Hint: Patients may expect fast pain relief, but honesty and reassurance are important.\n👉 How will you honestly but reassuringly respond to manage his expectations?",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "nurse",
+        "message": "",
+        "isCorrect": true,
+        "expectedResponse": "Prevents, More damage, Pain, Other medicine, Soon, Stops, Keeps from happening, Avoids, Further harm, Additional problems, Extra injury, Discomfort, Soreness, Chest ache, Additional medicine, Another drug, Something else for relief, Shortly, In a little while, Very soon",
+        "correctResponse": "It prevents more damage. For pain, we’ll give other medicine soon.",
+        "rationale": "This response sets realistic expectations aspirin prevents progression of myocardial infarction but does not immediately relieve pain. The nurse provides honest reassurance, an essential component of therapeutic communication (Brunner & Suddarth, 2022). Clear explanation reduces false expectations and promotes trust. Managing anxiety also prevents further sympathetic stimulation that can worsen ischemia."
+      },
+      {
+        "type": "system",
+        "message": "Congratulations for surviving the most critical 10 minutes of emergency care! ❤️\n👉 Type proceed if you want to continue supporting Mr. J, or click the End Simulation button if you want your progress to be evaluated.\n⚠️ Note: Once you click End Simulation, your current progress will be evaluated and you cannot return, it will reset back to zero.”",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "nurse",
+        "message": "",
+        "isCorrect": true,
+        "expectedResponse": "proceed",
+        "correctResponse": "proceed",
+        "rationale": "Expected Outcomes (0-10 minutes)\n👉Established rapport and identified the patient’s chief complaint.\n👉Collected vital signs and placed the patient on continuous cardiac monitoring.\n👉Administered oxygen therapy at 4 L/min via nasal cannula (SpO₂ < 90%).\n👉Positioned the patient in Semi-Fowler’s for improved breathing.\n👉Secured IV access and sent STAT blood samples.\n👉Administered aspirin with patient education on its purpose.\n👉Provided reassurance and therapeutic communication to reduce anxiety."
+      },
+      {
+        "type": "system",
+        "message": "Now it is 10–30 Minutes in the ED, meaning it is now the Diagnostics & Immediate Therapy Phase.\n\nThe 12-lead ECG is completed within 10 minutes of arrival.\n👉 How should you promptly report this result to the physician?",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "nurse",
+        "message": "",
+        "isCorrect": true,
+        "expectedResponse": "Doctor, ECG, Ready, Physician, Dr., Medical provider, Heart tracing, Electrocardiogram, Heart monitor reading, Set up, Prepared, Completed",
+        "correctResponse": "Doctor, ECG is ready.",
+        "rationale": "Prompt communication of diagnostic results is a critical nursing responsibility in emergency cardiac care. The American Heart Association (AHA, 2020) emphasizes that a 12-lead ECG should be obtained and interpreted within 10 minutes of arrival for any patient with chest pain suspected of acute coronary syndrome (ACS). Early transmission of results prevents delays in reperfusion therapy such as percutaneous coronary intervention (PCI). Brunner and Suddarth (2022) also note that effective nurse-doctor collaboration relies on immediate reporting of abnormal findings to avoid missed opportunities for life-saving intervention."
+      },
+      {
+        "type": "system",
+        "message": "ST elevation in leads II, III, aVF → Inferior STEMI.",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "system",
+        "message": "Doctor: This is a STEMI. Prepare for cath lab. Give nitroglycerin 0.4 mg SL if BP > 100.",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "system",
+        "message": "Hint: The doctor orders nitroglycerin. The patient’s BP is 140/90.\n👉 What should you do before administering the medication, and how will you explain it to the patient?",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "nurse",
+        "message": "",
+        "isCorrect": true,
+        "expectedResponse": "BP safe, Place, Small tablet, Under your tongue, Don’t swallow, Dissolve, Blood pressure okay, Pressure is fine, Safe to proceed, Put, Position, Set, Pill, Medicine, Dose, Sublingually, Beneath your tongue, On your tongue, Let it dissolve, Keep it there, Don’t chew or swallow, Melt, Break down, Absorb",
+        "correctResponse": "BP safe. Sir, I’ll place a small tablet under your tongue. Don’t swallow, just let itdissolve.",
+        "rationale": "Administration of sublingual nitroglycerin (0.3–0.4 mg) requires careful hemodynamic assessment. Nitroglycerin works by dilating coronary arteries, reducing myocardial oxygen demand, and relieving ischemic chest pain. However, it is contraindicated in patients with systolic blood pressure < 90 mmHg or recent use of phosphodiesterase inhibitors due to the risk of profound hypotension (AHA, 2020). By confirming that the patient’s BP is 140/90, the nurse ensures safe administration. Educating the patient on the correct sublingual route promotes rapid absorption and effectiveness (European Society of Cardiology, 2020)."
+      },
+      {
+        "type": "patient",
+        "message": "Will it stop the pain?",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "system",
+        "message": "Hint: Linking the drug to its purpose helps patients cooperate.\n👉 How will you connect the purpose of nitroglycerin to its effect in a way the patient can understand?How will you connect the purpose of nitroglycerin to its effect in a way the patient can understand?",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "nurse",
+        "message": "",
+        "isCorrect": true,
+        "expectedResponse": "Helps, Open, Heart’s blood vessels, Better flow, Assists, Supports, Works to, Widen, Relax, Expand, Coronary arteries, Heart vessels, Blood vessels in the heart, Improved circulation, Easier blood movement, More blood reaching the heart",
+        "correctResponse": "It helps open your heart’s blood vessels for better flow.",
+        "rationale": "Explaining nitroglycerin’s mechanism in layman’s terms enhances patient cooperation and understanding. Coronary vasodilation improves perfusion of ischemic myocardium, thereby reducing chest discomfort (Brunner & Suddarth, 2022). Patient education in emergency settings is a core nursing role, as it improves trust and compliance with therapy. The nurse balances reassurance with physiological accuracy, which the WHO (2018) highlights as essential in promoting patient safety and reducing anxiety in acute illness."
+      },
+      {
+        "type": "system",
+        "message": "Doctor: If pain persists, give morphine 2 mg IV slowly.",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "patient",
+        "message": "(groans) It still hurts, nurse…",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "system",
+        "message": "Hint: The patient still reports pain after nitroglycerin. The doctor orders morphine 2 mg IV.\n👉 What key safety teaching and monitoring will you provide before giving morphine?",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "nurse",
+        "message": "",
+        "isCorrect": true,
+        "expectedResponse": "Give, Morphine, Now, Tell me, Dizzy, Very sleepy, Administer, Provide, Start, Pain medicine, Strong pain reliever, Opioid, Immediately, Right away, At this time, Let me know, Inform me, Report to me, Lightheaded, Unsteady, Woozy, Extremely tired, Very drowsy, Feeling weak",
+        "correctResponse": "I’ll give you morphine now. Tell me if you feel dizzy or very sleepy.",
+        "rationale": "Morphine sulfate is indicated for persistent chest pain unrelieved by nitrates in ACS. It not only provides analgesia but also reduces preload through venodilation, lowering myocardial oxygen demand. However, it carries risks such as respiratory depression, hypotension, and altered consciousness, requiring close nursing surveillance (AHA, 2020). By instructing the patient to report side effects, the nurse demonstrates anticipatory guidance and fosters shared responsibility for monitoring. Continuous vital signs assessment during and after administration ensures early detection of complications (Brunner & Suddarth, 2022)."
+      },
+      {
+        "type": "system",
+        "message": "Radiology Tech: Chest X-ray done. No dissection or pneumonia.",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "system",
+        "message": "Doctor: Good. Start IV heparin bolus. Prepare for cath lab transfer.",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "system",
+        "message": "Hint: The doctor orders IV heparin. Some patients may feel uneasy when told they’re getting a “blood thinner.”\n👉 How will you explain the purpose of heparin in simple, reassuring terms?",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "nurse",
+        "message": "",
+        "isCorrect": true,
+        "expectedResponse": "Inject, Heparin, Thins the blood, Prevent, More clots, Slight cold sensation, Give with a shot, Administer, Put in, Blood thinner, Medicine, Anticoagulant, Makes blood less thick, Reduces clotting, Keeps blood flowing, Stop, Avoid, Reduce the risk of, Additional clots, Extra blockages, New clots, A little chill, Cool feeling, Minor cold feeling",
+        "correctResponse": "Sir, I’ll inject heparin. It thins the blood to prevent more clots. You may feel a slight cold sensation.",
+        "rationale": "Heparin, an anticoagulant, prevents thrombus propagation and is standard in ST-elevation myocardial infarction (STEMI) management (AHA, 2020). Nurses play a vital role in administering and explaining anticoagulants, as patients may fear “blood thinners.” Clear, calm education reduces anxiety and ensures cooperation. Brunner and Suddarth (2022) stress the nurse’s responsibility in monitoring for bleeding complications (e.g., hematuria, gum bleeding, bruising) once anticoagulation begins. Patient reassurance promotes trust and prevents agitation that could worsen ischemic symptoms."
+      },
+      {
+        "type": "patient",
+        "message": "Please stay with me, nurse.\n\nThe patient is anxious.\n👉 What therapeutic response can you give to reduce anxiety and promote trust?",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "nurse",
+        "message": "",
+        "isCorrect": true,
+        "expectedResponse": "Be right here, Sir, Stay with you, Remain nearby, Keep you company, Patient, Mr. J, You",
+        "correctResponse": "I’ll be right here, sir.",
+        "rationale": "Emotional support is a therapeutic nursing intervention that directly impacts physiologic outcomes. Anxiety and fear stimulate the sympathetic nervous system, leading to tachycardia, hypertension, and increased myocardial oxygen consumption—all of which worsen ischemia (WHO, 2018). By providing therapeutic presence, the nurse not only comforts the patient but also physiologically protects the heart. Nursing texts (Brunner & Suddarth, 2022) highlight the importance of reassurance and human connection in reducing stress during acute coronary events."
+      },
+      {
+        "type": "system",
+        "message": "Congratulations for stabilizing Mr. J with diagnostics and first-line therapies! \n👉Type fighting if you want to continue supporting Mr. J, or click the End Simulation button if you want your progress to be evaluated.\n⚠️ Note: Once you click End Simulation, your current progress will be evaluated and you cannot return, it will reset back to zero.",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "nurse",
+        "message": "",
+        "isCorrect": true,
+        "expectedResponse": "fighting",
+        "correctResponse": "fighting",
+        "rationale": "Expected Outcomes (10-30 minutes)\n👉Promptly obtained and reported the ECG findings.\n👉Safely administered nitroglycerin after confirming BP was stable.\n👉Provided patient education on nitroglycerin’s purpose.\n👉Administered morphine with anticipatory safety teaching and monitoring.\n👉Administered IV heparin with patient reassurance and explained its role.\n👉Maintained emotional support through therapeutic presence.\n👉Reassessed vitals and monitored for side effects of therapy."
+      },
+      {
+        "type": "system",
+        "message": "Now it is 30–60 Minutes in the ED, meaning it is now the Definitive Therapy Planning Phase. Results of the blood works you sent in the lab just returned.",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "system",
+        "message": "Lab Results\nTroponin I: Positive (0.8 ng/mL).\nCBC: Hb 13.2 g/dL, WBC 9.4 ×10⁹/L, Plt 230 ×10⁹/L.\nElectrolytes: K⁺ 4.1, Na⁺ 137.\nCreatinine: 0.9 mg/dL.\n",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "system",
+        "message": "Hint: One of the lab values confirms injury; this should be explained carefully.\n👉 How should you explain this finding to the patient without creating unnecessary panic?",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "nurse",
+        "message": "",
+        "isCorrect": true,
+        "expectedResponse": "blood test, heart injury, elevated, damage, heart muscle, heart damage",
+        "correctResponse": "Sir, your blood tests show a heart injury marker is elevated. This means there’s some damage in your heart muscle.",
+        "rationale": "Troponin I is the most specific biomarker for myocardial injury. A positive result (0.8 ng/mL in this case) confirms that the patient has sustained cardiac cell damage. The American Heart Association (AHA, 2020) and the European Society of Cardiology (2020) both recommend troponin as the gold standard for diagnosing myocardial infarction (MI). Nurses play a crucial role in delivering results in a clear and empathetic manner—acknowledging seriousness but preventing panic. According to Brunner and Suddarth (2022), framing information in simple terms fosters patient understanding and preserves trust in the healthcare team."
+      },
+      {
+        "type": "patient",
+        "message": "Am I… having a heart attack?",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "system",
+        "message": "Hint: Honesty is important, but reassurance about treatment is just as crucial.\n👉 What honest yet reassuring response will you provide to acknowledge the diagnosis and reduce anxiety?",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "nurse",
+        "message": "",
+        "isCorrect": true,
+        "expectedResponse": "Acting fast, Treat, Doctors, Open up, Blocked artery, Cath lab, Restore blood flow, Moving quickly, Responding immediately, Working quickly, Take care of, Fix, Manage, Medical team, Physicians, Care providers, Unblock, Widen, Clear, Clogged blood vessel, Narrowed artery, Heart vessel blockage, Heart procedure room, Cardiac lab, Procedure room, Improve circulation, Get blood moving, Let blood flow properly",
+        "correctResponse": "Yes, sir, but we’re acting fast to treat it. The doctors are preparing to open up the blocked artery in the cath lab. That’s the best way to restore your blood flow.",
+        "rationale": "Acknowledging the diagnosis honestly while reinforcing the treatment plan provides both transparency and reassurance. The gold standard for STEMI is percutaneous coronary intervention (PCI) within 90 minutes of first medical contact (AHA, 2020; WHO, 2019). Nurses are responsible for preparing the patient physically and psychologically for this invasive but life-saving procedure. Empathetic reassurance reduces anxiety, which decreases sympathetic stimulation and myocardial oxygen demand, thereby stabilizing the patient before transfer (Brunner & Suddarth, 2022)."
+      },
+      {
+        "type": "system",
+        "message": "Doctor: Activate the cath lab. Give loading dose of clopidogrel 600 mg PO and atorvastatin 80 mg PO.",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "system",
+        "message": "Hint: The doctor orders clopidogrel 600 mg and atorvastatin 80 mg.\n👉 How will you teach the patient about the purpose of these medications in simple, layman’s terms?",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "nurse",
+        "message": "",
+        "isCorrect": true,
+        "expectedResponse": "Give, Oral medicines, Clopidogrel, Prevents, Platelets, Forming new clots, Atorvastatin, Stabilize the blockage, Protect your arteries, Provide, Administer, Give you, Pills, Tablets, Medicines by mouth, Blood thinner, Anti-clot medicine, Medicine to stop clots, Stops, Keeps from happening, Reduces, Blood cells, Clotting cells, Tiny blood components, Making clots, Blood clumps, Blockages, Cholesterol medicine, Statin, Artery protection medicine, Keep blockage steady, Prevent worsening, Strengthen arteries, Safeguard blood vessels, Keep arteries healthy, Support blood flow",
+        "correctResponse": "Sir, I’ll give you two oral medicines now. One is clopidogrel, which prevents platelets from forming new clots, and the other is atorvastatin, which helps stabilize the blockage and protect your arteries.",
+        "rationale": "The nurse provides education on dual antiplatelet therapy (DAPT) aspirin plus clopidogrel which prevents re-occlusion of the coronary artery, and high-intensity statin therapy (atorvastatin 80 mg), which stabilizes plaques and reduces inflammation (AHA, 2020; ESC, 2020). By explaining the purpose in simple terms (“prevents clots,” “protects your arteries”), the nurse enhances adherence and minimizes anxiety. Brunner and Suddarth (2022) highlight that medication education in emergencies fosters trust and improves cooperation, particularly before invasive procedures."
+      },
+      {
+        "type": "patient",
+        "message": "(takes meds with water ) Alright… thank you for explaining.",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "system",
+        "message": "Hint: The patient thanks you after taking the meds. Now you need to prepare him for transfer.\n👉 What should you do and say to ensure he is both physically ready and emotionally reassured before going to the cath lab?",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "nurse",
+        "message": "",
+        "isCorrect": true,
+        "expectedResponse": "You’re welcome, Prepare, Transfer, Soon, No problem, It’s okay, Glad to help, Get ready, Arrange, Set up, Move, Take, Relocate, Shortly, In a little while, Very soon",
+        "correctResponse": "You’re welcome, sir. We’ll prepare you for transfer soon.",
+        "rationale": "This simple statement provides psychological support and prepares the patient mentally for the next phase of treatment. According to WHO (2018), reassurance combined with clear orientation to the care plan enhances patient safety and satisfaction, especially during high-stress procedures like PCI. The nurse also begins implementing pre-procedure preparation such as maintaining NPO (nothing by mouth) status, securing IV lines, and ensuring informed consent. These actions highlight the nurse’s role in bridging diagnostic results with definitive treatment."
+      },
+      {
+        "type": "system",
+        "message": "Congratulations for preparing Mr. J for definitive therapy and cath lab transfer! \n👉Type keep monitoring if you want to continue supporting Mr. J, or click the End Simulation button if you want your progress to be evaluated.\n⚠️ Note: Once you click End Simulation, your current progress will be evaluated and you cannot return, it will reset back to zero.",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "nurse",
+        "message": "",
+        "isCorrect": true,
+        "expectedResponse": "keep monitoring, monitoring",
+        "correctResponse": "keep monitoring",
+        "rationale": "Expected Outcomes (30-60 minutes)\n👉Informed the patient about elevated troponin levels and explained myocardial injury in simple terms.\n👉Acknowledged the diagnosis honestly while reassuring about urgent PCI treatment.\n👉Administered dual antiplatelet therapy (aspirin + clopidogrel) and high-intensity statin (atorvastatin) with education.\n👉Maintained NPO status, secured IV lines, ensured consent, and prepared patient physically for cath lab transfer.\n👉Provided reassurance to reduce anxiety and enhance psychological readiness."
+      },
+      {
+        "type": "system",
+        "message": "It has now been 1 hour since Mr. J arrived at the ED. He is awaiting transfer to the cath lab. Oxygen via NC at 4 L/min, on continuous cardiac monitoring.",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "system",
+        "message": "Hint: Monitoring is critical; even while waiting for PCI, instability may develop suddenly.\n👉 As a nurse, what should you do and say to the patient?",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "nurse",
+        "message": "",
+        "isCorrect": true,
+        "expectedResponse": "Preparing, Procedure, Soon, Checking, Vitals, Stay with you, Monitoring, Ongoing, Continuous, Heart rate, Blood pressure, Oxygen level, Cardiac monitoring, Keep an eye on, Watch, Observe, Patient, Mr. J, Remain nearby, Reassure, Reduce anxiety, Be present, Support, Stay close, Keep safe, Alert, Ready, Attend, Care, Observation",
+        "correctResponse": "Sir, we’re preparing for your procedure soon. I’ll keep checking your vitals and stay with you.",
+        "rationale": "Ongoing monitoring and reassurance reduce anxiety and allow early recognition of deterioration."
+      },
+      {
+        "type": "system",
+        "message": "Vital Signs:\nBP: 80/55 mmHg\nHR: 45 bpm, irregular\nSpO₂: 85%\n",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "patient",
+        "message": "Nurse… I feel so dizzy… my chest… ",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "system",
+        "message": "Mr. J becomes unconscious... unresponsive.",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "system",
+        "message": "Hint: Suddenly, the patient becomes unresponsive. Vitals: BP 80/55, HR 45 irregular, SpO₂ 85%.\n👉 What is your first action before starting resuscitation?",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "nurse",
+        "message": "",
+        "isCorrect": true,
+        "expectedResponse": "Mr. J, Are you okay, Responsive, Unresponsive, Check, Assess, Breathing, Pulse, Heartbeat, Alert, Conscious, Confirm, Verify, Awareness, Condition, Status, Safe, Evaluate, Monitor, Observe, Attention, Patient, Verify responsiveness, Check vital signs",
+        "correctResponse": "Mr. J, are you okay? Can you hear me? Open your eyes? Squeeze my hand.",
+        "rationale": "Before initiating cardiopulmonary resuscitation (CPR), the nurse must quickly assess responsiveness, breathing, and pulse. This prevents errors such as starting chest compressions on a patient who still has circulation. According to the AHA (2020), immediate recognition of cardiac arrest—within 10 seconds of collapse—is the critical first link in the Chain of Survival. Brunner and Suddarth (2022) emphasize that confirmation avoids inappropriate interventions and ensures patient safety."
+      },
+      {
+        "type": "system",
+        "message": "Hint: You confirm no response and no pulse.\n👉 What must you immediately do as the nurse?",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "nurse",
+        "message": "",
+        "isCorrect": true,
+        "expectedResponse": "Starting, Compressions, Now, CPR, High-quality CPR, Immediate, Begin, Chest compressions, Cardiac arrest, Heart stopped, Resuscitation, Emergency, Act quickly, Begin lifesaving measures, Pulse absent, No heartbeat, Start, Perform",
+        "correctResponse": "Starting compressions now!\n",
+        "rationale": "High-quality chest compressions are the priority in cardiac arrest. The nurse initiates CPR immediately, maintaining a rate of 100–120 compressions per minute and a depth of at least 5 cm in adults, allowing full chest recoil (AHA, 2020). Early CPR maintains coronary and cerebral perfusion until advanced interventions can be delivered. Nursing literature highlights that in real-life settings, the nurse is often the first responder, making this action life-saving (Brunner & Suddarth, 2022)."
+      },
+      {
+        "type": "system",
+        "message": "Hint: The monitor shows asystole.\n👉 How will you notify the physician and the team about the rhythm?",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "nurse",
+        "message": "",
+        "isCorrect": true,
+        "expectedResponse": "Doctor, Asystole, Detected, Flat line, Heart stopped, No heartbeat, No pulse, Monitor, Alert, Notify, Inform, Identify, Recognize, Cardiac arrest, Heart rhythm absent, Emergency, Immediate attention",
+        "correctResponse": "Doctor, asystole detected!",
+        "rationale": "Clear and immediate communication of cardiac rhythms is vital for team coordination. Asystole is a non-shockable rhythm, meaning that CPR and epinephrine not defibrillation are the appropriate interventions (AHA, 2020). Nurses are trained to rapidly recognize ECG rhythms and verbally confirm them to ensure team consensus before interventions are applied. This prevents inappropriate shocks, which could worsen outcomes (WHO, 2018).\n\nEpinephrine 1 mg IV every 3–5 minutes is the standard vasopressor therapy during non-shockable cardiac arrest rhythms (AHA, 2020). The nurse collaborates in medication preparation, administration, and documentation, ensuring accuracy and safety. Concurrent bag-mask ventilation with 100% oxygen at a 30:2 ratio supports oxygen delivery to vital organs until an advanced airway is secured."
+      },
+      {
+        "type": "system",
+        "message": "Doctor: Continue compressions—prep epinephrine 1 mg IV.",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "system",
+        "message": "Supporting team administers epinephrine IV and performs bag-mask ventilation with O₂ 100% at 30:2 ratio.",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "system",
+        "message": "After 2 minutes of CPR + epinephrine. Rhythm changes to ventricular fibrillation. ",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "system",
+        "message": "Hint: The defibrillator is charging.\n👉 What life-saving intervention must you initiate, and how do you ensure team safety while performing it?",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "nurse",
+        "message": "",
+        "isCorrect": true,
+        "expectedResponse": "Rhythm, VF, Ventricular fibrillation, Charging, Defibrillator, 200 J, Clear, Delivering shock, Electrical shock, Heart rhythm, Heart monitor, Heart emergency, CPR ongoing, Act quickly, Life-saving, Cardiac arrest, Alert, Prepare, Administer, Shock, Start electrical therapy",
+        "correctResponse": "Rhythm is VF. Charging defibrillator to 200 J. 1 I am are clear, 2 you are clear, 3 everybody clear. Delivering shock!",
+        "rationale": "Ventricular fibrillation (VF) is a shockable rhythm. Defibrillation is the definitive therapy, and early shocks within the first few minutes of arrest greatly improve survival (AHA, 2020). Nurses trained in advanced cardiac life support (ACLS) often operate defibrillators, ensuring team safety by calling “Clear!” before delivering the shock. Immediate resumption of CPR after defibrillation maximizes perfusion and increases the chance of return of spontaneous circulation (ROSC) (Brunner & Suddarth, 2022)."
+      },
+      {
+        "type": "system",
+        "message": "Shock delivered; CPR immediately resumed by the team.",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "system",
+        "message": "Another 2 minutes of compressions are performed. Epinephrine prepared for next cycle. Advanced airway is placed, with continuous compressions and 1 breath every 6 seconds.",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "system",
+        "message": "Hint: After shock + CPR, the patient regains a pulse; organized rhythm.\n👉 How should you report this to the physician and what immediate nursing priorities follow?",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "nurse",
+        "message": "",
+        "isCorrect": true,
+        "expectedResponse": "Doctor, Pulse present, ROSC, Return of spontaneous circulation, Heartbeat returned, Heart stable, Rhythm organized, Confirm, Verify, CPR successful, Heartbeat detected, Stabilized, Heart monitoring, Safe, Life-saving, Alert, Emergency resolved, Heart rhythm normal, Heartbeat restored",
+        "correctResponse": "Doctor, pulse is present. ROSC achieved.",
+        "rationale": "Announcing the Return of Spontaneous Circulation (ROSC) signals a shift from active resuscitation to post-arrest care. Nursing responsibilities now include maintaining oxygenation (target SpO₂ > 94%), supporting blood pressure with fluids/vasopressors, and continuous monitoring for recurrent arrest. According to AHA (2020), the post-cardiac arrest period is highly unstable; vigilance is essential for preventing secondary injury. Nurses also provide reassurance to the recovering patient, bridging the physiologic and psychological aspects of care."
+      },
+      {
+        "type": "system",
+        "message": "Doctor: Excellent. Start post-arrest care. Maintain oxygenation, titrate to SpO₂ > 94%, and stabilize BP with fluids or vasopressors if needed. Prepare for immediate cath lab transfer.",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "system",
+        "message": "Hint: The patient regains consciousness, confused and anxious.\n👉 What will you say to reassure him and orient him after resuscitation?",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "nurse",
+        "message": "",
+        "isCorrect": true,
+        "expectedResponse": "Sir, Back with us, Continue, Support, Procedure, Soon, Conscious, Awake, Stable, Safe, Monitoring, Care, Observation, Assist, Help, Transfer, Cath lab, Heart procedure, Preparing, Ready, Ongoing care, Life-saving, Heart support, Alert, Present, Stay with you",
+        "correctResponse": "Sir, you’re back with us. We’ll continue to support you and bring you for your procedure",
+        "rationale": "This statement provides emotional grounding for the patient, who may experience confusion or fear after regaining consciousness. The WHO (2018) highlights that patients who survive cardiac arrest often benefit from clear orientation and reassurance immediately post-event. By confirming ongoing support and preparation for PCI, the nurse reinforces safety, continuity of care, and psychological readiness for the next phase of treatment (Brunner & Suddarth, 2022)."
+      },
+      {
+        "type": "system",
+        "message": "Congratulations, you’ve successfully managed Mr. J through cardiac arrest, ACLS interventions, and post-resuscitation stabilization! \n👉Type Future RN if you want to continue supporting Mr. J, or click the End Simulation button if you want your progress to be evaluated.\n⚠️ Note: Once you click End Simulation, your current progress will be evaluated and you cannot return, it will reset back to zero.",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "nurse",
+        "message": "",
+        "isCorrect": true,
+        "expectedResponse": "Future, RN, Future RN",
+        "correctResponse": "Future RN",
+        "rationale": "Expected Outcomes (60+ minutes ACLS)\n👉Recognized cardiac arrest and initiated high-quality CPR immediately.\n👉Correctly identified asystole and communicated findings to the team.\n👉Supported ACLS interventions with epinephrine administration and bag-mask ventilation.\n👉Identified VF and delivered safe, timely defibrillation.\n👉Reported ROSC and transitioned to post-arrest care.\n👉Reassured and oriented the patient after resuscitation to reduce anxiety and confusion.\n👉Prepared patient for transfer to cath lab with continued monitoring."
+      },
+      {
+        "type": "system",
+        "message": "Congratulations! You have successfully managed Mr. J’s case from arrival at the ED through sudden collapse, ACLS interventions, and post-ROSC stabilization.",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "system",
+        "message": "Now, be ready for your evaluation score. Keep it up future RN!",
+        "isCorrect": null,
+        "expectedResponse": null
+      }
+    ],
+    "createdBy": "instructor",
+    "dateCreated": "2025-09-27T16:33:20.789Z"
+  }
+]

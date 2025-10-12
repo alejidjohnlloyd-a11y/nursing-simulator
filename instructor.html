@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructor Panel - Nursing Chat Simulator</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Instructor Panel</h1>
+            <nav>
+                <a href="index.html" class="nav-btn">← Back to Scenarios</a>
+                <button onclick="showPinModal()" class="nav-btn">Change PIN</button>
+                <button onclick="logout()" class="nav-btn logout-btn">Logout</button>
+            </nav>
+        </header>
+
+        <!-- Instructor Panel -->
+        <div class="page active">
+            <div class="page-content">
+                <h2>Scenario Management</h2>
+                <div class="instructor-tabs">
+                    <button onclick="showInstructorTab('create')" class="tab-btn active" id="create-tab">Create Scenario</button>
+                    <button onclick="showInstructorTab('manage')" class="tab-btn" id="manage-tab">Manage Scenarios</button>
+                </div>
+
+                <!-- Create Scenario Tab -->
+                <div id="create-scenario" class="tab-content active">
+                    <form id="scenario-form" class="scenario-form">
+                        <div class="form-group">
+                            <label for="hospital-setting">Hospital Setting:</label>
+                            <select id="hospital-setting" required>
+                                <option value="">Select Setting</option>
+                                <option value="emergency">Emergency Department</option>
+                                <option value="icu">Intensive Care Unit</option>
+                                <option value="medical">Medical Ward</option>
+                                <option value="surgical">Surgical Ward</option>
+                                <option value="pediatric">Pediatric Unit</option>
+                                <option value="maternity">Maternity Ward</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="scenario-description">Scenario Description:</label>
+                            <textarea id="scenario-description" required placeholder="Describe the clinical scenario..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="patient-profile">Patient Profile:</label>
+                            <textarea id="patient-profile" required placeholder="Age, gender, chief complaint, medical history..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="scenario-title">Scenario Title:</label>
+                            <input type="text" id="scenario-title" required placeholder="Enter scenario title">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="timer-duration">Timer Duration (minutes - optional):</label>
+                            <input type="number" id="timer-duration" min="1" max="120" placeholder="Leave empty for no timer limit">
+                            <small>Set how long students have to complete this scenario (1-120 minutes). Leave empty for no time limit.</small>
+                        </div>
+
+                        <div class="interactions-section">
+                            <h3>Interactions</h3>
+                            <div id="interactions-list">
+                                <!-- Interactions will be added here -->
+                            </div>
+                            <button type="button" onclick="addInteraction()" class="btn btn-secondary">Add Interaction</button>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Save Scenario</button>
+                    </form>
+                </div>
+
+                <!-- Manage Scenarios Tab -->
+                <div id="manage-scenarios" class="tab-content">
+                    <div id="scenarios-management">
+                        <!-- Scenario management will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading Screen -->
+        <div id="loading-overlay" class="loading-overlay" style="display: none;">
+            <div class="loading-content">
+                <div class="loading-spinner"></div>
+                <p class="loading-text">Saving scenario...</p>
+            </div>
+        </div>
+
+        <!-- Change PIN Modal -->
+        <div id="pin-modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Change Instructor PIN</h3>
+                    <button onclick="hidePinModal()" class="close-btn">&times;</button>
+                </div>
+                <form id="pin-form">
+                    <div class="form-group">
+                        <label for="current-pin">Current PIN:</label>
+                        <input type="password" id="current-pin" required maxlength="4" pattern="[0-9]{4}" placeholder="Enter current PIN">
+                    </div>
+                    <div class="form-group">
+                        <label for="new-pin">New PIN:</label>
+                        <input type="password" id="new-pin" required maxlength="4" pattern="[0-9]{4}" placeholder="Enter new 4-digit PIN">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-pin">Confirm New PIN:</label>
+                        <input type="password" id="confirm-pin" required maxlength="4" pattern="[0-9]{4}" placeholder="Confirm new PIN">
+                    </div>
+                    <div class="modal-actions">
+                        <button type="button" onclick="hidePinModal()" class="btn btn-secondary">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Update PIN</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/instructor-page.js"></script>
+</body>
+</html>
