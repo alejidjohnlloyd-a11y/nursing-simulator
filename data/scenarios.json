@@ -23,7 +23,7 @@
         "type": "system",
         "message": "This is the system message to help set the scene. Are you ready? Type YES.",
         "isCorrect": null,
-        "expectedResponse": null
+        "expectedResponse": "YES"
       },
       {
         "type": "patient",
@@ -609,6 +609,7 @@
   }
 
 ]
+
 
 
 
