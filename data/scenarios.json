@@ -25,6 +25,10 @@
         "isCorrect": null,
         "expectedResponse": "YES"
       },
+       "type": "nurse",
+        "message": "",
+        "isCorrect": null,
+        "expectedResponse": "YES"
       {
         "type": "patient",
         "message": "Nurse… help… my chest…",
