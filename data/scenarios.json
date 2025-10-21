@@ -9,6 +9,24 @@
     "interactions": [
       {
         "type": "patient",
+        "message": "This is the patient's text box.",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "system",
+        "message": "Hint: This will be your guide on your expected responses.",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "system",
+        "message": "This is the system message to help set the scene. Are you ready? Type YES.",
+        "isCorrect": null,
+        "expectedResponse": null
+      },
+      {
+        "type": "patient",
         "message": "Nurse… help… my chest…",
         "isCorrect": null,
         "expectedResponse": null
@@ -591,5 +609,6 @@
   }
 
 ]
+
 
 
